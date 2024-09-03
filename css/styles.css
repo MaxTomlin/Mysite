@@ -1,0 +1,26 @@
+body{
+    margin 0;
+    padding: 0%;
+}
+
+.container{
+
+}
+
+.main-tittle{
+font-size: 30px;
+
+}
+
+.main-img{
+width: 200px;
+height: 200px;
+}
+
+.main-text{
+
+}
+
+.container p{ 
+    color: red;
+}

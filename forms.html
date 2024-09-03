@@ -1,61 +1,65 @@
+<!--method - метод отправки данных на сервер (get или post)
+    action - адрес, на который передаются данные формы
+-->
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Формы</title>
-    </head>
-    <body>
-        <form action="#" method="post" enctype="multipart/form-data">
-            <p>
-               <label for="login">Логин:</label>
-               <input name="login" type="text" placeholder="Логин" maxlength="5"/>
-            </p>
+    <title>Формы</title>
+     </head>
+     <body>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+           <p> 
+           <label for="login">Логин</label>
+           <input id="login" type="text" placeholder="Логин" maxlength="5" autofocus/>
+           </p>
+           
+           <p>
+           <label for="password">Пароль</label>
+           <input name="password" type="password" placeholder="Пароль"/>
+           </p>
+           
+           <p>
+           <label for="phone">Телефон</label>
+           <input name="phone" type="text" value="123456789" disabled/>
+           </p>
+           
+           <p>
+           <label for="age">Возраст</label>
+           <input name="age" type="number" min="11" max="150" step="10"/>
+           </p>
+
+           <p>
+           <label for="rbutton">Радио-кнопка</label>
+           <input name="rbutton" type="radio"/>
+           </p>
+           
+           <p>
+           <label for="chbox">Чекбокс 1</label>
+           <input name="chbox" type="checkbox"/>
+           </p>
 
             <p>
-                <label for="password">Пароль:</label>
-                <input name="password" type="password" placeholder="Пароль"/>
-            </p>
+           <label for="chbox2">Чекбокс 2</label>
+           <input name="chbox2" type="checkbox"/>
+           </p>
+
+           <p>
+           <label for="color">Цвет</label>
+           <input name="color" type="color"/>
+           </p>
+
+           <p>
+           <label for="file">Файл</label>
+           <input name="file" type="file"/>
+           </p>
 
             <p>
-                <label for="phone">Телефон</label>
-                <input name="phone" type="text" value="123456789" readonly/>
-            </p>
+           <label for="range">Ползунок</label>
+           <input name="range" type="range" min="10" step="1" value="10"/>
+           </p>
 
-             <p>
-                <label for="age">Возраст</label>
-                <input name="age" type="number" min="12" max="120" step="10"/>
-            </p>
-
-
-            <p>
-                <label for="rbutton">Радио-кнопка</label>
-                <input name="rbutton" type="radio"/>
-            </p>
-
-             <p>
-                <label for="checkbox">Чекбокс<type="che"/>
-                ,<input type="checkbox" name="checkbox">
-            </p>
-
-
-            <p>
-                <label for="color">Цвет</label>
-                <input name="color" type="color"/>
-            </p>
-
-             <p>
-                <label for="file">Файл</label>
-                <input name="file" type="file"/>
-            </p>
-
-             <p>
-                <label for="range">Ползунок</label>
-                <input name="range" type="range" min="1" max="1" step="1"/>
-            </p>
-
-
-
-            <input type="submit" value="Войти"/>
-            <input type="reset" value="Сбросить"/>
+           <input type="submit" value="Войти">
+           <input type="reset" value="Сбросить">
         </form>
-    </body>
-</html>
+     </body>
+     </html>
